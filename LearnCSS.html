@@ -1,11 +1,13 @@
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Learn CSS</title>
-	  
-	  <style>
+
+	
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Learn CSS</title>
+      
+      <style>
 		  
 		  body{
     background-image: url(Media/Olive/pitbull_clipart1.png);
@@ -19,36 +21,84 @@
 			  color: blue
 		  }
 		  
-		  img{
-			  height: 200px;
+		  
+		  .set1 {
+			  
 			  width: 300px;
+			  height: 200px;
 		  }
 		  
-	  </style>
-	  
-  </head>
+		  .set2 {
+    height: 10%;
+    width: 20%;
+		  }
+<div id="mediaScreen">
+@media screen and (min-width: 0px) and (max-width: 300px) {
+  #min_width300px {
+    background-color: green;
+  }
+		  }
+@media screen and (min-width: 301px) and (max-width: 400px) {
+  #min_width400px {
+    background-color: purple;
+	  display:none
+  }
 	
-  <body>
-	  <a href="index.html">Dr. O'Grady Home Page</a>
+	
+		  }
+@media screen and (min-width: 401px) and (max-width: 1300px)  {
+  #min_width700px {
+    background-color: red;
+  }
+}
+</div>
 
-	 <h1> This is learn CSS</h1>
-<!--
+		</style>
+      
+    </head>
+    
+    <body>
+      <a href="index.html">Dr. O'Grady Home Page</a>
+      
+      <h1> This is learn CSS</h1>
+  <!--
 	  <img src = "Media/Olive/20200412_153300.jpg">
 	  <img src = "Media/Olive/20200416_082310.jpg">
 	  <img src = "Media/Olive/20200412_153300.jpg">
 	  <img src = "Media/Olive/20200412_153300.jpg">
 	  <img src = "Media/Olive/20200412_153300.jpg">
 	  -->
-	  <img src="Media/Olive/IMG_20180603_173912.jpg" width="4048" height="3036" alt=""/>
-	  
-	  <img src="Media/Olive/IMG_20180412_181647.jpg" width="4048" height="3036" alt=""/>
-	  <img src="Media/Olive/IMG_20190712_112217.jpg" width="4048" height="3036" alt=""/>
-	  <img src="Media/Olive/IMG_20190626_063047.jpg" width="4048" height="3036" alt=""/>
-	  <img src="Media/Olive/IMG_20190222_162205.jpg" width="4048" height="3036" alt=""/>
-	  <img src="Media/Olive/IMG_20191029_070345.jpg" width="4048" height="3036" alt=""/>
-	  
-	  
-	  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	  
-	   </body>
-</html>
+      <img  class = "set1" src="Media/Olive/IMG_20180603_173912.jpg" width="10" height="10" alt=""/>
+      
+      <img class = "set1" src="Media/Olive/IMG_20180412_181647.jpg" width="4048" height="3036" alt=""/>
+      <img class = "set1" src="Media/Olive/IMG_20190712_112217.jpg" width="4048" height="3036" alt=""/>
+      <img class = "set1" src="Media/Olive/IMG_20190626_063047.jpg" width="4048" height="3036" alt=""/>
+      <img class = "set1" src="Media/Olive/IMG_20190222_162205.jpg" width="4048" height="3036" alt=""/>
+      <img class = "set1" src="Media/Olive/IMG_20191029_070345.jpg" width="4048" height="3036" alt=""/>
+      
+      
+      <br><br><br><br>
+      
+      
+      <img class = "set2" src="Media/Olive/IMG_20190912_175548.jpg" alt="" width="100"/>
+      <img class = "set2" src="Media/Olive/IMG_20200111_100607.jpg" alt="" width="100"/>
+      <img class = "set2" src="Media/Olive/IMG_20190205_131311.jpg" alt="" width="100"/>
+      <img class = "set2" src="Media/Olive/IMG_20190912_175535.jpg" alt="" width="100"/>
+      
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      
+    <div id="MediaQueries">
+        
+      <p> If you can read this then the minimum width is set to ...</p>
+      <p id = "min_width300px">300px</p>
+      <p id = "min_width400px">400px</p>
+      <p id = "min_width700px">700px</p>
+        
+        </div>
+      
+      
+      
+      
+    </body>
+  </html>
+</div>
