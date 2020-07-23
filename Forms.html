@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Trying Forms</title>
+</head>
+<body>
+<form action="" id="myForm">
+  <label for="fname">First name:</label><br>
+  <input name="fname" type="text" id="fname" value="Jon" maxlength="10"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Snow">
+<br>	
+  <input type="radio" id="male" name="gender" value="male"> 
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>	<br>
+	
+	<input type="submit">
+	
+</form>
+	
+//<input name="ConsoleOut" type="button" id="ConsoleOut" value="Click For Console Out">
+<br>
+	<button id="ConsoleOut">Console Out!</button>
+	
+<div><h3>Test</h3></div>
+	
+
+	
+<script>
+	//var x = document.getElementById("myForm");
+	       // var libButton = document.getElementById('lib-button');
+        
+	var FormAction = function() {
+           // var storyDiv = document.getElementById("story");
+            //var noun = document.getElementById("noun").value;
+			            
+            //storyDiv.innerHTML = "Hi!" + person + "how are you? Did you buy a/an " + noun + " today? Are you feeling kind of " + adj + "?";
+    console.log("hey!")
+  };
+        
+ConsoleOut.addEventListener('click', FormAction);
+	
+	
+</script>
+	
+</body>
+</html>
